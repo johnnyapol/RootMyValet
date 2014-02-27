@@ -1,7 +1,7 @@
 RootMyValet
 ===========
 
-A one-click APK file to root the ZTE Valet
+A one-click APK file to root the ZTE Valet. Uses a modified version of the Xperia locked bootloader exploit to gain root and runs it on boot to make it 'permanet'. An ingenious solution to a complex problem. This *should* work with multiple types of phones as well. Uninstallation is as simple as uninstalling the APK and rebooting. (for the Valet only.) (This will remove the su binary on the valet.) You may have to manually remove the binary depending on the phone.
 
 ============================================
 
@@ -9,6 +9,7 @@ Credits
 ============================================
 
 CUBE - https://twitter.com/cubeundcube - for his Xperia kernel temp-root exploit. This would not have been possible without him
+
 Unkn0wn0ne - Programming, modification of exploits, getting everything to place nice.
 
 Stayboogy - For his work on the device
@@ -19,7 +20,7 @@ Stayboogy - For his work on the device
 License
 ============================================
 
-Since this project utilizes GPL code, the entire project;s CODE is licensed under GPLv3. This includes the Xperia with Unkn0wn0ne modifications, the APK, and the shell scripts to get everything going nice. 
+Since this project utilizes GPL code, the entire project's CODE is licensed under GPLv3. This includes the Xperia with Unkn0wn0ne modifications, the APK, and the shell scripts to get everything going nice. 
 
 ============================================
 
