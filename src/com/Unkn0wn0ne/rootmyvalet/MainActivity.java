@@ -48,16 +48,12 @@ public class MainActivity extends Activity {
 	}
 	
 	private void runFiles() {
-		Toast.makeText(this, "Starting root telnet session on port 23....", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "Starting root telnet session on port 23 and binary push....", Toast.LENGTH_LONG).show();
 		try {
 			Runtime.getRuntime().exec("/data/local/tmp/roothandler"); //RootHandler is modifed from getroot exploit so It will start telnet as root
 		} catch (IOException e) {
 			e.printStackTrace();
-		} 
-	}
-	
-	public void pushBinary(View view) {
-		Toast.makeText(this, "Starting Binary push....", Toast.LENGTH_LONG).show();
+		}
 		new TelnetTask(this).execute();
 	}
 }
