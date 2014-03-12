@@ -18,16 +18,6 @@
         android:layout_alignRight="@+id/button2"
         android:layout_marginTop="28dp"
         android:onClick="run"
-        android:text="Start Telnet as Root on Port 23" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="26dp"
-        android:onClick="pushBinary"
-        android:text="Push SU binary to /system/xbin. (Must run Telnet first)" />
+        android:text="Push SU Binary and start temporary telnet sesssion" />
 
 </RelativeLayout>
