@@ -16,22 +16,19 @@
  */
 package com.Unkn0wn0ne.rootmyvalet;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 
-import android.content.Context;
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
 
-@SuppressWarnings("rawtypes")
-public class TelnetTask extends AsyncTask {
+public class TelnetTask extends AsyncTask<Object, Object, Object> {
 
-	@SuppressWarnings("unused")
-	private Context activity;
+	private Activity activity = null;
 
-	public TelnetTask(Context activity) {
+	public TelnetTask(Activity activity) {
 		this.activity = activity;
 	}
 
@@ -49,10 +46,9 @@ public class TelnetTask extends AsyncTask {
 
 			DataOutputStream out = new DataOutputStream(
 					socket.getOutputStream());
-			final DataInputStream dis = new DataInputStream(
-					socket.getInputStream());
+			final BufferedReader reader = new BufferedReader(
+					new InputStreamReader(socket.getInputStream()));
 			new Thread(new Runnable() {
-
 				@Override
 				public void run() {
 					while (true) {
@@ -62,11 +58,13 @@ public class TelnetTask extends AsyncTask {
 							e.printStackTrace();
 						}
 						try {
-							if (dis.available() > 0) {
-								byte[] buffer = new byte[1024];
-								dis.readFully(buffer);
-								Log.e("RootMyValet", new String(buffer));
-
+							if (!reader.ready()) {
+								continue;
+							}
+							String str = null;
+							str = reader.readLine();
+							if (str != null) {
+								Log.e("RootMyValet", str);
 							}
 						} catch (IOException e) {
 							break;
@@ -75,28 +73,45 @@ public class TelnetTask extends AsyncTask {
 				}
 
 			}).start();
-			out.writeBytes("su" + "/r/n");
-			out.flush();
-			out.writeBytes("mount -o rw,remount /system" + "/r/n");
-			out.flush();
-			out.writeBytes("mount -o rw,remount /" + "/r/n");
-			out.flush();
-			out.writeBytes("busybox cp /data/local/tmp/su /system/xbin/su"
-					+ "/r/n");
-			out.flush();
-			out.writeBytes("chmod 06755 /system/xbin/su" + "/r/n");
-			out.flush();
-			out.writeBytes("ln -s /system/xbin/su /system/bin/su" + "/r/n");
-			out.flush();
-			out.writeBytes("pkill telnetd");
-			out.flush();
+			writeText("su" + "/r/n", out);
+			writeText("mount -o rw,remount /system" + "/r/n", out);
+			writeText("mount -o rw,remount /" + "/r/n", out);
+			writeText("busybox cp /data/local/tmp/su /system/xbin/su" + "/r/n",
+					out);
+			writeText("chmod 06755 /system/xbin/su" + "/r/n", out);
+			writeText("ln -s /system/xbin/su /system/bin/su" + "/r/n", out);
+			// THIS IS JUST TESTING CODE TO SEE IF COMMANDS ARE BEING RUN!
+			writeText("echo Hello World! > /data/local/tmp/test.txt", out);
+			writeText("pkill telnetd" + "/r/n", out);
 			Thread.sleep(30);
-			socket.close();
+			if (!socket.isClosed()) {
+				socket.close();
+			}
 			Log.e("RootMyValet", "Pushed su binary");
+			showHint("Pushed su binary!");
 		} catch (Exception e) {
-			Log.e("RootMyValet", "Exception occured - Root probably failed. :(", e);
+			Log.e("RootMyValet",
+					"Exception occured - Root probably failed. :(", e);
 		}
-
 		return null;
+	}
+
+	private void writeText(String str, DataOutputStream out) throws IOException {
+		out.writeUTF(str);
+		out.flush();
+	}
+
+	private void showHint(final String text) {
+		if (this.activity == null) {
+			return;
+		}
+		this.activity.runOnUiThread(new Runnable() {
+
+			@Override
+			public void run() {
+				Toast.makeText(activity, text, Toast.LENGTH_LONG).show();
+			}
+			
+		});
 	}
 }
