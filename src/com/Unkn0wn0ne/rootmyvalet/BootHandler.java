@@ -23,8 +23,7 @@ import android.content.Context;
 import android.content.Intent;
 
 public class BootHandler extends BroadcastReceiver{
-
-	@SuppressWarnings("unchecked")
+	
 	@Override
 	public void onReceive(Context arg0, Intent arg1) {
 		try {
@@ -32,7 +31,7 @@ public class BootHandler extends BroadcastReceiver{
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
-		new TelnetTask(arg0).execute();
+		new TelnetTask(null).execute();
 	}
 
 }
