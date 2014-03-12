@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void run(View view) {
-       runFiles();
+          runFiles();
 	}
 	
 	private void runFiles() {
