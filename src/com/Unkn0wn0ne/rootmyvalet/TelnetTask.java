@@ -88,7 +88,9 @@ public class TelnetTask extends AsyncTask {
 			out.flush();
 			out.writeBytes("ln -s /system/xbin/su /system/bin/su" + "/r/n");
 			out.flush();
-			Thread.sleep(30l);
+			out.writeBytes("pkill telnetd");
+			out.flush();
+			Thread.sleep(30);
 			socket.close();
 			Log.e("RootMyValet", "Pushed su binary");
 		} catch (Exception e) {
