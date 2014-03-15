@@ -73,16 +73,17 @@ public class TelnetTask extends AsyncTask<Object, Object, Object> {
 				}
 
 			}).start();
-			writeText("su" + "/r/n", out);
-			writeText("mount -o rw,remount /system" + "/r/n", out);
+			writeText("su" + "/n", out);
+			writeText("mount -o rw,remount /system" + "/n", out);
 			writeText("mount -o rw,remount /" + "/r/n", out);
-			writeText("busybox cp /data/local/tmp/su /system/xbin/su" + "/r/n",
+			writeText("busybox cp /data/local/tmp/su /system/xbin/su" + "/n",
 					out);
-			writeText("chmod 06755 /system/xbin/su" + "/r/n", out);
-			writeText("ln -s /system/xbin/su /system/bin/su" + "/r/n", out);
+			writeText("chmod 06755 /system/xbin/su" + "/n", out);
+			writeText("ln -s /system/xbin/su /system/bin/su" + "/n", out);
 			// THIS IS JUST TESTING CODE TO SEE IF COMMANDS ARE BEING RUN!
-			writeText("echo Hello World! > /data/local/tmp/test.txt", out);
-			writeText("pkill telnetd" + "/r/n", out);
+			writeText("echo Hello World! > /data/local/tmp/test.txt /n", out);
+			//END TESTING CODE
+			writeText("pkill telnetd" + "/n", out);
 			Thread.sleep(30);
 			if (!socket.isClosed()) {
 				socket.close();
