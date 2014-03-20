@@ -33,13 +33,13 @@ Notes / Disclammar
 
 USE AT YOUR OWN RISK. I (UNKN0WN0NE) or anyone else involved in this project ARE NOT RESPONSIBLE FOR ANYTHING THAT HAPPENS WHILE USING THIS PROJECT OR PARTS OF THIS PROJECT. YOUR WARRANTY IS PROBABLY GONE.
 
+THIS APPLICATION CANNOT BE UPLOADED TO THE PLAY STORE BECAUSE USING A ROOT EXPLOIT VIOLATES STORE POLICY. RootMyValet Developers ARE NOT RESPONSIBLE IF YOU LOSE YOUR PLAY STORE ACCOUNT OR HAVE AN ACTION TAKEN AGAINST IT FOR UPLOADING THIS.
+
+THE DEVICE MUST BE ABLE TO INSTALL THE APPLICATION THROUGH UNKNOWN SOURCES. IF THE DEVICE HAS UNKNOWN SOURCES DISABLED, INSTALL IT USING ADB
 ============================================
 
-'#include <std/disclaimer.h>
-/*
+Disclammar
+============================================
  * I am not responsible for bricked devices, dead SD cards, thermonuclear
- * war, or the current economic crisis caused by you following these
- * directions. YOU are choosing to make these modificiations, and
- * if you point your finger at me for messing up your device, I will
- * laugh at you.
- */'
+ * war, or the current economic crisis caused by you following these directions. 
+ * YOU are choosing to make these modificiations, and if you point your finger at me for messing up your device, I will laugh at you.
