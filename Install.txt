@@ -1,0 +1,11 @@
+How to install:
+
+Step 1: Push the su binary to /data/local/tmp using adb push su /data/local/tmp
+Step 2: Push the roothandler binary to /data/local/tmp using adb push roothandler /data/local/tmp
+Step 3: Set the roothandler binary permission using adb shell chmod 0755 /data/local/tmp/roothandler
+Step 4: Install the APK using abd install RootMyValet.apk
+Step 5: Start the app on the device, hit the button that says "Push SU Binary and start temporary telnet sesssion"
+Step 6: Wait about a minute
+Step 7: Enjoy your root!
+
+If root fails, try rebooting the device.
