@@ -1,6 +1,6 @@
 #!/system/bin/sh
 #Valet root script by Unkn0wn0ne
-su
+/system/bin/busybox su
 /system/bin/busybox mount -o rw, remount /system
 #Testing - remove at later date
 /system/bin/busybox mount -o rw, remount /
