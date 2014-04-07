@@ -54,6 +54,5 @@ public class MainActivity extends Activity {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		new TelnetTask(this).execute();
 	}
 }
