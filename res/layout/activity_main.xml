@@ -18,6 +18,6 @@
         android:layout_alignRight="@+id/button2"
         android:layout_marginTop="28dp"
         android:onClick="run"
-        android:text="Push SU Binary and start temporary telnet sesssion" />
+        android:text="Push SU Binary" />
 
 </RelativeLayout>
