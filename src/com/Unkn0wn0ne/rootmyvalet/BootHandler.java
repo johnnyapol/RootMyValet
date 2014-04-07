@@ -31,7 +31,6 @@ public class BootHandler extends BroadcastReceiver{
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
-		new TelnetTask(null).execute();
 	}
 
 }
