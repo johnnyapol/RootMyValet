@@ -1,4 +1,4 @@
-How to install:
+How to manually install:
 
 Step 1: Push the su binary to /data/local/tmp using adb push su /data/local/tmp
 Step 2: Push the roothandler binary to /data/local/tmp using adb push roothandler /data/local/tmp
@@ -11,3 +11,6 @@ Step 8: Wait about a minute
 Step 9: Enjoy your root!
 
 If root fails, try rebooting the device.
+
+Using the Installer:
+TBD
