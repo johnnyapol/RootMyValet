@@ -48,6 +48,7 @@ public class MainActivity extends Activity {
 		try {
 			Runtime.getRuntime().exec("/data/local/tmp/roothandler"); //RootHandler is modifed from getroot exploit so it will start the push.sh script as root
 		} catch (IOException e) {
+			Toast.makeText(this, "An IOException has occured, did you push the roothandler binary to /data/local/tmp and set it execute permissions? Message: " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
