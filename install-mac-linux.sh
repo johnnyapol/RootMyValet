@@ -18,4 +18,5 @@ echo Rebooting device...
 $ANDROID_HOME/platform-tools/./adb reboot
 $ANDROID_HOME/platform-tools/./adb wait-for-device
 echo Thank you for using RootMyValet, your device should now be rooted. If you are using a ZTE Valet phone, you cannot delete the application or it's files or the root will go away
-read i
+echo Press any key to continue...
+read k
