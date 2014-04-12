@@ -12,7 +12,7 @@ Step 9: Enjoy your root!
 
 If root fails, try rebooting the device.
 
-Using the Installer:
+Using the automatic installer:
 
 For Windows Users
 =================
@@ -23,4 +23,5 @@ Run the install-windows.bat file. Make sure that you have the ANDROID_HOME varia
 For Unix-based users (Linux, Mac OSX, etc.)
 ==========================================
 
-- TBD, need to write a shell script
+Requirements: Android SDK with ANDROID_HOME variable set
+Run the install-mac-linux.sh file.
