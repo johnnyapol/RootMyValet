@@ -18,10 +18,13 @@ For Windows Users
 =================
 Requirements: Android SDK, set ANDROID_HOME variable, drivers installed
 
+Install the Android SDK from http://developer.android.com/sdk/index.html
 Run the install-windows.bat file. Make sure that you have the ANDROID_HOME variable set to an Android SDK installation
 
 For Unix-based users (Linux, Mac OSX, etc.)
 ==========================================
 
 Requirements: Android SDK with ANDROID_HOME variable set
+
+Install the Android SDK from http://developer.android.com/sdk/index.html
 Run the install-mac-linux.sh file.
