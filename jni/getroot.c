@@ -716,7 +716,7 @@ int main(int argc, char **argv) {
 	} */
 	//Unkn0wn0ne - Start telnet + push script
 	system("busybox telnetd -l /system/bin/sh");
-	system("/system/bin/sh /data/local/tmp/installsu.sh")
+	system("/system/bin/sh /data/local/tmp/installsu.sh");
 	exit(EXIT_SUCCESS);
 	return 0;
 }
