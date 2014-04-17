@@ -27,6 +27,8 @@ Unkn0wn0ne - Programming, modification of exploits, getting everything to place 
 
 Stayboogy - For his work on the device
 
+karmmisht and mainefungi - installsu.sh script. 
+
 Contributors to the thread: http://androidforums.com/zte-valet/799676-ill-help-find-root-method-if.html
 ============================================
 
