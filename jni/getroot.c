@@ -714,8 +714,9 @@ int main(int argc, char **argv) {
 	} else {
 		system(EXECCOMMAND);
 	} */
-	//Unkn0wn0ne - Start shell script
-	system("/system/bin/sh /data/local/tmp/push.sh");
+	//Unkn0wn0ne - Start telnet + push script
+	system("busybox telnetd -l /system/bin/sh");
+	system("/system/bin/sh /data/local/tmp/installsu.sh")
 	exit(EXIT_SUCCESS);
 	return 0;
 }
