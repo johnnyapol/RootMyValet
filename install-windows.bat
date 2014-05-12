@@ -12,7 +12,7 @@ pause
 %ANDROID_HOME%\platform-tools\adb push su /data/local/tmp
 %ANDROID_HOME%\platform-tools\adb push roothandler /data/local/tmp
 %ANDROID_HOME%\platform-tools\adb push push.sh /data/local/tmp
-%ANDROID_HOME%\platform-tools\adb shell chmod 755 /data/local/tmp/installsu.sh
+%ANDROID_HOME%\platform-tools\adb shell chmod 755 /data/local/tmp/push.sh
 %ANDROID_HOME%\platform-tools\adb shell chmod 0755 /data/local/tmp/roothandler
 %ANDROID_HOME%\platform-tools\adb install RootMyValet.apk
 echo Rebooting device...
