@@ -1,8 +1,9 @@
 #!/system/bin/sh
-# telnet in and install su
+# This here by Unkn0wn0ne for use in RootMyValet
+echo RootMyValet root script for Android devices
+/data/local/tmp/roothandler
 # karmmisht and mainefungi
-# Modified by Unkn0wn0ne for use in RootMyValet
- 
+# Slightly modified by Unkn0wn0ne for use in root my valet
 ( \
 echo 'stty -echo'; sleep 2; \
 echo 'su'; sleep 2; \
