@@ -3,8 +3,8 @@ How to manually install:
 Step 1: Push the su binary to /data/local/tmp using adb push su /data/local/tmp
 Step 2: Push the roothandler binary to /data/local/tmp using adb push roothandler /data/local/tmp
 Step 3: Set the roothandler binary permission using adb shell chmod 0755 /data/local/tmp/roothandler
-Step 4: Push the push.sh script to /data/local/tmp using adb push installsu.sh /data/local/tmp
-Step 5: Set the push.sh script the execution permission using adb shell chmod 755 /data/local/tmp/installsu.sh
+Step 4: Push the installsu.sh script to /data/local/tmp using adb push installsu.sh /data/local/tmp
+Step 5: Set the installsu.sh script the execution permission using adb shell chmod 755 /data/local/tmp/installsu.sh
 Step 6: Install the APK using adb install RootMyValet.apk
 Step 7: Start the app on the device, hit the button that says "Push SU Binary"
 Step 8: Wait about a minute
