@@ -14,7 +14,7 @@ Manual Installation (for the elite users who want to test the bleeding edge sour
 
 See the Disclamar and Notes / Disclammar section first
 
-View manual installation instructions at: [here](https://github.com/Unkn0wn0ne/RootMyValet/blob/master/Install.txt)
+View manual installation instructions at: [here](https://github.com/Unkn0wn0ne/RootMyValet/wiki/Manual-installation-Instructions)
 
 ============================================
 
