@@ -25,7 +25,7 @@ CUBE - https://twitter.com/cubeundcube - for his Xperia kernel temp-root exploit
 
 Unkn0wn0ne - Programming, modification of exploits, getting everything to place nice.
 
-Elliot Labs - Programming
+Elliot Labs - Programming and Wiki
 
 Stayboogy - For his work on the device
 
