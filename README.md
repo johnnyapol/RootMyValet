@@ -12,7 +12,7 @@ RootMyValet doesn't require an unlocked bootloader
 Manual Installation Installation instructions:
 ===================
 
-See the Disclamar and Notes / Disclammar section first
+### See the Disclamar and Notes / Disclammar section first
 
 These instruction are for testing out the system befor a release is made. Because of that it may be unstable or have some other unseen flaw. If anything bad is encountered please make an issue in the issue tab of github :)
 
