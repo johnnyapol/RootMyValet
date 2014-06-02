@@ -11,7 +11,7 @@ echo 'busybox cp /sdcard/su /system/xbin/su'; sleep 2; \
 echo 'busybox chmod 06755 /system/xbin/su'; sleep 2; \
 echo 'busybox ln -s /system/xbin/su /system/bin/su'; sleep 2; \
 echo 'busybox pkill telnetd'; sleep 2; \
- | busybox telnet 127.0.0.1 23
+| busybox telnet 127.0.0.1 23
  
 if [ -f /system/xbin/su ]; then
     echo "\nsu successfully copied into /system/xbin"
