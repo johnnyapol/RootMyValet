@@ -10,7 +10,7 @@ echo '/system/bin/busybox busybox mount -o rw,remount /system'; sleep 2;
 echo '/system/bin/busybox busybox cp /sdcard/su /system/xbin/su'; sleep 2; 
 echo '/system/bin/busybox busybox chmod 06755 /system/xbin/su'; sleep 2; 
 echo '/system/bin/busybox ln -s /system/xbin/su /system/bin/su'; sleep 2; 
-echo '/system/bin/busybox pkill telnetd'; sleep 2) | busybox telnet 127.0.0.1 23
+echo '/system/bin/busybox pkill telnetd'; sleep 2) | /system/bin/busybox telnet 127.0.0.1 23
  
 if [ -f /system/xbin/su ]; then
     echo "\nsu successfully copied into /system/xbin"
