@@ -1,9 +1,9 @@
 #!/system/bin/sh
 # This here by Unkn0wn0ne for use in RootMyValet
-echo RootMyValet root script for Android devices (v1.0.2)
+echo RootMyValet root script for Android devices v1.0.2
 # karmmisht and mainefungi
 # Slightly modified by Unkn0wn0ne for use in root my valet
-( 
+(
 echo '/system/bin/busybox stty -echo'; sleep 2; 
 echo '/system/bin/busybox su'; sleep 2; 
 echo '/system/bin/busybox busybox mount -o rw,remount /system'; sleep 2; 
