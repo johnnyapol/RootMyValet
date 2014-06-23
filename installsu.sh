@@ -1,18 +1,9 @@
 #!/system/bin/sh
 # This here by Unkn0wn0ne for use in RootMyValet
-echo RootMyValet root script for Android devices v1.0.3
+echo RootMyValet root script for Android devices v1.0.4
 # karmmisht and mainefungi
 # Slightly modified by Unkn0wn0ne for use in root my valet
-/system/bin/busybox telnet 127.0.0.1 23 <<EOF
-/system/bin/busybox stty -echo ; sleep 2; 
-/system/bin/busybox su ; sleep 2; 
-/system/bin/busybox busybox mount -o rw,remount /system ; sleep 2; 
-/system/bin/busybox busybox cp /sdcard/su /system/xbin/su ; sleep 2; 
-/system/bin/busybox busybox chmod 06755 /system/xbin/su ; sleep 2; 
-/system/bin/busybox ln -s /system/xbin/su /system/bin/su ; sleep 2; 
-/system/bin/busybox pkill telnetd ; sleep 2 
-EOF
-
+(/system/bin/busybox stty -echo ; /system/bin/busybox su ; /system/bin/busybox busybox mount -o rw,remount /system ; /system/bin/busybox busybox cp /data/local/tmp/su /system/xbin/su ; /system/bin/busybox busybox chmod 06755 /system/xbin/su ; /system/bin/busybox ln -s /system/xbin/su /system/bin/su ; /system/bin/busybox pkill telnetd) | busybox telnet 127.0.0.1 23
 if [ -f /system/xbin/su ]; then
     echo "\nsu successfully copied into /system/xbin"
 else
