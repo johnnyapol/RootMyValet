@@ -29,6 +29,8 @@ Unkn0wn0ne - Programming, modification of exploits, getting everything to place 
 
 Elliot Labs - Programming and Wiki
 
+benjimt - Gereral programing for temp root, website
+
 Stayboogy - For his work on the device
 
 karmmisht and mainefungi - installsu.sh script. 
