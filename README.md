@@ -35,6 +35,8 @@ Stayboogy - For his work on the device
 
 karmmisht and mainefungi - installsu.sh script. 
 
+jjfriede - Code contributions and bug fixes
+
 Contributors to the thread: http://androidforums.com/zte-valet/799676-ill-help-find-root-method-if.html
 ============================================
 
