@@ -1,9 +1,9 @@
 # RootMyValet project
 
-# Thanks to karmmisht and mainefungi along with jjfried for their work
+# Thanks to karmmisht and mainefungi along with jjfried and elliot-labs for their work
 
 echo RootMyValet root script for Android devices v1.1
-echo By karmmisht, mainefungi, jjfried.
+echo By karmmisht, mainefungi, jjfried, and elliot-labs.
 
 ( 		
     busybox su ;		
